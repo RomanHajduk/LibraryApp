@@ -2,12 +2,11 @@
 {
     using LibraryApp.Entities;
     using Microsoft.EntityFrameworkCore;
-    public class LibraryAppDbContext: DbContext
+    public class RentalShopAppDbContext: DbContext
     {
         public DbSet<Book> Books => Set<Book>();
-        public DbSet<ComicBook> Comics => Set<ComicBook>();
-        public DbSet<DVD_Game> DVD_Games => Set<DVD_Game>();
-        public DbSet<CompactDiscMusic> CompactDisc => Set<CompactDiscMusic>();
+        public DbSet<PC_Game> DVD_Games => Set<PC_Game>();
+        public DbSet<CD_Music> CompactDisc => Set<CD_Music>();
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
